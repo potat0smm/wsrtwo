@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".verification.CodeFragment">
+
+    <ImageView
+        android:id="@+id/back_to_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/code_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:text="Введите код из E-mail"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/code_text">
+
+        <EditText
+            android:id="@+id/OTP1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/background_code_verif"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:imeOptions="actionNone"
+            android:inputType="numberDecimal"
+            android:textCursorDrawable="@null"
+            android:maxLength="1"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/OTP2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/background_code_verif"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionNone"
+            android:inputType="numberDecimal"
+            android:textCursorDrawable="@null"
+            android:maxLines="1"
+            android:maxLength="1"/>
+        <EditText
+            android:id="@+id/OTP3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/background_code_verif"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:imeOptions="actionNone"
+            android:inputType="numberDecimal"
+            android:textCursorDrawable="@null"
+            android:maxLines="1"
+            android:maxLength="1"/>
+        <EditText
+            android:id="@+id/OTP4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/background_code_verif"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:imeOptions="actionNone"
+            android:inputType="numberDecimal"
+            android:textCursorDrawable="@null"
+            android:maxLines="1"
+            android:maxLength="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="#939396"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
