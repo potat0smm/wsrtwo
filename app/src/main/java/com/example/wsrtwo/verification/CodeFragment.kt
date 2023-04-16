@@ -142,10 +142,7 @@ class CodeFragment : Fragment() {
                             Toast.makeText(requireContext(),"Ошибка",Toast.LENGTH_SHORT).show()
                         }
                     }
-                    override fun onFailure(call: Call<SignIn>, t: Throwable) {
-                        TODO("Not yet implemented")
-                    }
-
+                    override fun onFailure(call: Call<SignIn>, t: Throwable) {}
                 })
             }
         }
