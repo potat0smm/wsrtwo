@@ -39,27 +39,11 @@ class CreateUser : Fragment() {
     }
 
     private fun navigationToNextFragment(){
-        binding.name.addTextChangedListener {
-            binding.patronymic.addTextChangedListener {
-                binding.surname.addTextChangedListener {
-                    binding.birthday.addTextChangedListener {
-                            binding.goMenu.isEnabled = false
-                            var status = false
-                            if (editText.isNotEmpty()) {
-                                status = true
-                            }
-                            binding.goMenu.isEnabled = status
-                            binding.goMenu.setOnClickListener {
-                                val action =
-                                    CreateUserDirections.actionCreateUserToContainerFragment()
-                                findNavController().navigate(action)
-                            }
-                    }
-                }
-            }
+        binding.goMenu.setOnClickListener {
+            val action = CreateUserDirections.actionCreateUserToContainerFragment()
+            findNavController().navigate(action)
         }
     }
-
     override fun onDestroy() {
         super.onDestroy()
         _binding = null

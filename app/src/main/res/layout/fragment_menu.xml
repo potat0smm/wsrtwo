@@ -40,6 +40,7 @@
                 android:id="@+id/first_recyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:orientation="horizontal"
                 android:paddingLeft="15dp"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -51,11 +52,13 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/second_recyclerView"
                 android:layout_width="match_parent"
+                android:orientation="horizontal"
                 android:layout_height="wrap_content"
                 android:paddingLeft="15dp"/>
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/third_recyclerView"
                 android:layout_width="match_parent"
+                android:orientation="vertical"
                 android:paddingLeft="15dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="60dp"/>
@@ -63,6 +66,7 @@
     </androidx.core.widget.NestedScrollView>
 
     <FrameLayout
+        android:id="@+id/FL"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:background="@color/white"
@@ -71,6 +75,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/addBtn"
             android:layout_width="370dp"
             android:layout_height="55dp"
             android:layout_gravity="center"

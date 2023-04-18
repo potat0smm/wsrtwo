@@ -5,20 +5,20 @@
         android:id="@+id/analyzes"
         android:icon="@drawable/analyzes"
         android:title="Анализы"
-        android:iconTint="@color/black"/>
+        android:iconTint="#B8C1CC"/>
     <item
         android:id="@+id/result"
         android:icon="@drawable/result"
         android:title="Результаты"
-        android:iconTint="@color/black"/>
+        android:iconTint="#B8C1CC"/>
     <item
         android:id="@+id/help"
         android:icon="@drawable/hellper"
         android:title="Поддержка"
-        android:iconTint="@color/black"/>
+        android:iconTint="#B8C1CC"/>
     <item
         android:id="@+id/profil"
         android:icon="@drawable/profil"
         android:title="Профиль"
-        android:iconTint="@color/black"/>
+        android:iconTint="#B8C1CC"/>
 </menu>
